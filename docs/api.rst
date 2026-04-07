@@ -97,7 +97,7 @@ Users
 
     *Changed in 1.0.0: new handler parameter.*
 
-    *Changed in 1.0.0: an exception is now raised for signaling a failed authenticaiton as opposed to returning a bool.*
+    *Changed in 1.0.0: an exception is now raised for signaling a failed authentication as opposed to returning a bool.*
 
   .. method:: impersonate_user(username, password)
 
@@ -284,7 +284,7 @@ Control connection
 
   .. method:: on_incomplete_file_sent(file)
 
-    Called when time a file has not been entirely sent (e.g. transfer aborted
+    Called when a file has not been entirely sent (e.g. transfer aborted
     by client). ``file`` is the absolute path of that file.
 
     *New in version 0.6.0*
@@ -427,12 +427,12 @@ Server (acceptor)
   .. method:: close()
 
     Stop accepting connections without disconnecting the clients currently
-    connected. :meth:`server_forever` loop will automatically stop when the last
+    connected. :meth:`serve_forever` loop will automatically stop when the last
     client disconnects.
 
   .. method:: close_all()
 
-    Disconnect all clients, tell :meth:`server_forever` loop to stop and wait
+    Disconnect all clients, tell :meth:`serve_forever` loop to stop and wait
     until it does.
 
     *Changed in version 1.0.0: ``map`` and ``ignore_all`` parameters were removed.*
@@ -457,7 +457,7 @@ Filesystem
   chroot jail where the user can not escape his/her home directory (example:
   real "/home/user" path will be seen as "/" by the client). It also provides
   wrappers around all ``os.*`` calls (``mkdir``, ``rename``, etc) and ``open``
-  builtin. The contructor accepts two arguments which are passed by the
+  builtin. The constructor accepts two arguments which are passed by the
   ``FTPHandler``: ``root``, which is the user "real" home
   directory (e.g. '/home/user') and ``cmd_channel`` which is a
   :class:`pyftpdlib.handlers.FTPHandler` class instance.
@@ -565,13 +565,13 @@ Extended handlers
 
     The path to a file which contains a certificate to be used to identify the
     local side of the connection. This must always be specified, unless
-    a :ref`:`ssl_context` is provided instead. See :ref:`ftps-server` on how to
+    a :data:`ssl_context` is provided instead. See :ref:`ftps-server` on how to
     generate SSL certificates. Default: ``None``.
 
   .. data:: keyfile
 
-    The path of the file containing the private RSA key. It can be omittetted
-    if the :ref`:`certfile` already contains the private key.
+    The path of the file containing the private RSA key. It can be omitted
+    if the :data:`certfile` already contains the private key.
     See :ref:`ftps-server` on how to generate SSL certificates.
     Default: ``None``.
 
@@ -589,7 +589,7 @@ Extended handlers
 
      Specific OpenSSL options. This defaults to: ``OP_NO_SSLv2 | OP_NO_SSLv3 |
      OP_NO_COMPRESSION``, which are all considered unsecure settings. It can be
-     set to ``None`` in order to improve compatibilty with older (insecure) FTP
+     set to ``None`` in order to improve compatibility with older (insecure) FTP
      clients (not recommended).
 
      .. versionadded:: 1.6.0
@@ -610,13 +610,13 @@ Extended handlers
   .. data:: tls_data_required
 
     If ``True`` it requires the client to secure the data connection with TLS
-    before logging in. This means the clie will have to issue the PROT command
+    before logging in. This means the client will have to issue the PROT command
     before PASV or PORT. Default: ``False``.
 
 Extended authorizers
 --------------------
 
-.. class:: pyftpdlib.authorizers.UnixAuthorizer(global_perm="elradfmwMT", allowed_users=None, rejected_users=None, require_valid_shell=True, anonymous_user=None, ,msg_login="Login successful.", msg_quit="Goodbye.")
+.. class:: pyftpdlib.authorizers.UnixAuthorizer(global_perm="elradfmwMT", allowed_users=None, rejected_users=None, require_valid_shell=True, anonymous_user=None, msg_login="Login successful.", msg_quit="Goodbye.")
 
   An authorizer which interacts with the UNIX password database. Users are no
   longer supposed to be explicitly added as when using the
@@ -711,3 +711,21 @@ Extended servers
   *Changed in 1.2.0: added ioloop parameter; address can also be a pre-existing socket.*
 
   *Availability: POSIX*
+
+
+Exceptions
+----------
+
+.. exception:: pyftpdlib.exceptions.AuthorizerError()
+
+  Base class for authorizer exceptions.
+
+.. exception:: pyftpdlib.exceptions.AuthenticationFailed()
+
+  Exception raised when authentication fails for any reason.
+
+.. exception:: pyftpdlib.exceptions.FilesystemError()
+
+  Custom class for filesystem-related exceptions. You can raise this from an
+  AbstractedFS subclass in order to send a customized error string to the
+  client.

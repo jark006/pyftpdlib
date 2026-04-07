@@ -40,5 +40,5 @@ Additional dependencies
 
 .. _`FTPS`: https://pyftpdlib.readthedocs.io/en/latest/tutorial.html#ftps-ftp-over-tls-ssl-server
 .. _`PyOpenSSL`: https://pypi.org/project/pyOpenSSL
-.. _`WindowsAuthorizer`: api.html#pyftpdlib.authorizers.UnixAuthorizer
+.. _`WindowsAuthorizer`: api.html#pyftpdlib.authorizers.WindowsAuthorizer
 .. _`pywin32`: https://pypi.org/project/pywin32/

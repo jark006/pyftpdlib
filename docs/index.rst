@@ -7,16 +7,14 @@
 Welcome to pyftpdlib's documentation
 ====================================
 
-If you're in a hurry just read the `Tutorial <tutorial.html>`__.
-
 .. toctree::
     :maxdepth: 2
 
     install
     tutorial
-    cli
     api
     faqs
+    cli
     benchmarks
     rfc-compliance
     adoptions

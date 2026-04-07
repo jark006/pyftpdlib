@@ -172,14 +172,14 @@ results in transfer rates that are from 2x to 3x faster.
 In the past some cases were reported that using ``sendfile(2)`` with "non
 regular" filesystems such as NFS, SMBFS/Samba, CIFS or network mounts in
 general may cause some issues, see
-http://www.proftpd.org/docs/howto/Sendfile.html. If you bump into one these
+http://www.proftpd.org/docs/howto/Sendfile.html. If you bump into one of these
 issues you can set `FTPHandler.use_sendfile`_ to ``False``:
 
 .. code-block:: python
 
     from pyftpdlib.handlers import FTPHandler
     handler = FTPHandler
-    handler.use_senfile = False
+    handler.use_sendfile = False
     ...
 
 Globbing / STAT command implementation

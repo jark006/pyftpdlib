@@ -2,12 +2,9 @@
 Adoptions
 =========
 
-.. contents:: Table of Contents
-
 Here comes a (mostly outdated) list of softwares and systems using pyftpdlib.
 In case you want to add your software to such list, make a PR or create a
 ticket on the bug tracker.
-Please help us in keeping such list updated.
 
 Packages
 ========
@@ -24,7 +21,7 @@ pyftpdlib has been packaged for different Linux distros, see `repology.org <http
 FreeBSD
 -------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/freebsd.gif?raw=true
+.. image:: _static/images/freebsd.gif
 
 A `freshport <http://www.freshports.org/ftp/py-pyftpdlib>`__
 is available.
@@ -37,7 +34,7 @@ Following lists the softwares adopting pyftpdlib.
 Google Chromium
 ---------------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/chrome.jpg?raw=true
+.. image:: _static/images/chrome.jpg
 
 `Google Chromium <https://www.chromium.org/chromium-projects/>`__, the open
 source project behind Google Chrome, uses pyftpdlib for unit tests of the
@@ -46,7 +43,7 @@ FTP client included in the browser.
 Smartfile
 ---------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/smartfile.png?raw=true
+.. image:: _static/images/smartfile.png
 
 `Smartfile <https://www.smartfile.com/>`__ is a market leader in FTP and online
 file storage that has a robust and easy-to-use web interface. We utilize
@@ -56,7 +53,7 @@ flexibility we require to integrate FTP with the rest of our application.
 Pyfilesystem
 ------------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/images/pyfilesystem.svg?raw=true
+.. image:: _static/images/pyfilesystem.svg
 
 `Pyfilesystem <https://www.pyfilesystem.org/>`__ is a Python module
 that provides a common interface to many types of filesystem, and provides some
@@ -67,7 +64,7 @@ component.
 Bazaar
 ------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/bazaar.jpg?raw=true
+.. image:: _static/images/bazaar.jpg
 
 `Bazaar <https://code.launchpad.net/bzr>`__ is a distributed version control
 system similar to GIT which supports different protocols among which FTP. Same
@@ -77,7 +74,7 @@ internal FTP unit tests.
 Python for OpenVMS
 ------------------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/openvms.png?raw=true
+.. image:: _static/images/openvms.png
 
 `OpenVMS <https://vmssoftware.com/>`__ is an
 operating system that runs on the `VAX <http://en.wikipedia.org/wiki/VAX>`__
@@ -91,7 +88,7 @@ every new vmspython installation.
 OpenERP
 -------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/openerp.jpg?raw=true
+.. image:: _static/images/openerp.jpg
 
 `OpenERP <http://openerp.com>`__ is an Open Source enterprise management
 software.  It covers and integrates most enterprise needs and processes:
@@ -111,7 +108,7 @@ into `Zope <https://www.zope.dev/>`__.
 put.io FTP connector
 --------------------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/putio.png?raw=true
+.. image:: _static/images/putio.png
 
 `put.io <https://put.io/>`__ is a storage service that fetches media files
 remotely and lets you stream them immediately. They wrote a PoC based on
@@ -122,7 +119,7 @@ https://github.com/ybrs/putio-ftp-connector.
 Rackspace Cloud's FTP
 ---------------------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/rackspace-cloud-hosting.jpg?raw=true
+.. image:: _static/images/rackspace-cloud-hosting.jpg
 
 `ftp-cloudfs <http://github.com/chmouel/ftp-cloudfs>`__ is a FTP server acting
 as a proxy to `Rackspace Cloud <https://www.rackspace.com/cloud>`__. It
@@ -132,7 +129,7 @@ containers.
 Far Manager
 -----------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/farmanager.png?raw=true
+.. image:: _static/images/farmanager.png
 
 `Far Manager <http://farmanager.com/>`__ is a program for managing files and
 archives on Windows. Far Manager included pyftpdlib as a plug-in for making the
@@ -142,7 +139,7 @@ files with virtual machines.
 Google Pages FTPd
 -----------------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/google-pages.gif?raw=true
+.. image:: _static/images/google-pages.gif
 
 `gpftpd <http://arkadiusz-wahlig.blogspot.com/2008/04/hosting-files-on-google.html>`__
 is a pyftpdlib based FTP server you can connect to using your Google e-mail
@@ -154,7 +151,7 @@ download them and upload new ones.
 Peerscape
 ---------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/peerscape.gif?raw=true
+.. image:: _static/images/peerscape.gif
 
 `Peerscape <http://www.peerscape.org/>`__ is an experimental peer-to-peer social
 network implemented as an extension to the Firefox web browser. It implements a
@@ -175,7 +172,7 @@ performances.
 Symbian Python FTP server
 -------------------------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/symbianftp.png?raw=true
+.. image:: _static/images/symbianftp.png
 
 An FTP server for Symbian OS: http://code.google.com/p/sypftp/
 
@@ -283,20 +280,20 @@ Web sites using pyftpdlib
 www.bitsontherun.com
 --------------------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/bitsontherun.png?raw=true
+.. image:: _static/images/bitsontherun.png
 
 http://www.bitsontherun.com
 
 www.adcast.tv
 -------------
 
-.. image:: https://github.com/giampaolo/pyftpdlib/blob/master/docs/images/adcast.png?raw=true
+.. image:: _static/images/adcast.png
 
 http://www.adcast.tv http://www.adcast.tv
 
 www.netplay.it
 --------------
 
-.. image:: http://pyftpdlib.googlecode.com/svn/wiki/images/netplay.jpg
+.. image:: _static/images/netplay.jpg
 
 http://netplay.it/

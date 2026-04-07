@@ -11,7 +11,7 @@ This page lists the standard Internet RFCs that define the FTP protocol.
 pyftpdlib conforms to the FTP protocol standard as defined in `RFC-959`_ and
 `RFC-1123`_, implementing all the fundamental commands and features described
 in them. It also implements some more (relatively) recent features such as OPTS
-and FEAT commands (`RFC-2398`_), EPRT and EPSV commands to implement IPv6
+and FEAT commands (`RFC-2389`_), EPRT and EPSV commands to implement IPv6
 support (`RFC-2428`_) and MDTM, MLSD, MLST and SIZE commands defined in
 `RFC-3659`_ that standardize directory listing. TLS/SSL support (FTPS) as
 defined in `RFC-4217`_ is also implemented. Some features like ACCT or SMNT
@@ -241,7 +241,7 @@ original 7-bit ASCII. Introduces the new LANG command.
 +======================+===============+=============+===============================================================================================================================+=========+
 | LANG command         | NO            | ---         | Set current response's language.                                                                                              |         |
 +----------------------+---------------+-------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
-| Support for UNICODE  | YES           | 1.0.0       | For support of global compatibility it is rencommended that clients and servers use UTF-8 encoding when exchanging pathnames. |         |
+| Support for UNICODE  | YES           | 1.0.0       | For support of global compatibility it is recommended that clients and servers use UTF-8 encoding when exchanging pathnames.  |         |
 +----------------------+---------------+-------------+-------------------------------------------------------------------------------------------------------------------------------+---------+
 
 RFC-3659 - Extensions to FTP
@@ -320,7 +320,6 @@ implement them.
 .. _`RFC-2228`: https://datatracker.ietf.org/doc/html/rfc2228
 .. _`RFC-2246`: https://datatracker.ietf.org/doc/html/rfc2246
 .. _`RFC-2389`: https://datatracker.ietf.org/doc/html/rfc2389
-.. _`RFC-2398`: https://datatracker.ietf.org/doc/html/rfc2389
 .. _`RFC-2428`: https://datatracker.ietf.org/doc/html/rfc2428
 .. _`RFC-2577`: https://datatracker.ietf.org/doc/html/rfc2577
 .. _`RFC-2640`: https://datatracker.ietf.org/doc/html/rfc2640

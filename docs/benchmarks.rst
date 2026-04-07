@@ -99,7 +99,7 @@ By using *sendfile()* (Twisted *does not* support sendfile()):
 By using plain *send()*:
 
 +-----------------------------------------+----------------+---------------+--------------+
-| *benchmark type*                        | *tpdlib*       | *twisted*     | *speedup*    |
+| *benchmark type*                        | *pyftpdlib*    | *twisted*     | *speedup*    |
 +=========================================+================+===============+==============+
 | RETR (server -> client)                 |  894.29 MB/sec | 283.24 MB/sec | **+2.1x**    |
 +-----------------------------------------+----------------+---------------+--------------+
